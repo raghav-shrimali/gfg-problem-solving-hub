@@ -15,4 +15,4 @@ public:
         int x = (int)a;
         return 2 * x;
     }
-};
+  };
