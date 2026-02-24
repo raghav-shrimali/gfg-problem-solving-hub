@@ -1,0 +1,33 @@
+/*
+GFG - Left View of Binary Tree
+Approach: Level Order Traversal (BFS)
+Time Complexity: O(N)
+Space Complexity: O(N)
+*/
+
+class Solution {
+public:
+    vector<int> leftView(Node *root) {
+        vector<int> ans;
+        if(!root) return ans;
+
+        queue<Node*> q;
+        q.push(root);
+
+        while(!q.empty()) {
+            int size = q.size();
+
+            for(int i = 0; i < size; i++) {
+                Node* temp = q.front();
+                q.pop();
+
+                if(i == 0)
+                    ans.push_back(temp->data);
+
+                if(temp->left) q.push(temp->left);
+                if(temp->right) q.push(temp->right);
+            }
+        }
+        return ans;
+    }
+};
