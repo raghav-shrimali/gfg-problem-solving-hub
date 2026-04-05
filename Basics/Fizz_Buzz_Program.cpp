@@ -10,7 +10,7 @@ Space Complexity: O(1)
 */
 
 class Solution {
-public:
+public: 
     vector<string> fizzBuzz(int n) {
         vector<string> result;
 
