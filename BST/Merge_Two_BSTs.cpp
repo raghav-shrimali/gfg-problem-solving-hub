@@ -1,4 +1,4 @@
-/*
+1/*
 Problem: Merge Two BSTs
 Platform: GeeksforGeeks
 
