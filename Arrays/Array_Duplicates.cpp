@@ -9,7 +9,7 @@ Time Complexity: O(n)
 Space Complexity: O(n)
 */
 
-class Solution {
+class Solution  {
 public: 
     vector<int> duplicates(int arr[], int n) {
         vector<int> freq(n, 0);
