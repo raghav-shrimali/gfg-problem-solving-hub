@@ -19,7 +19,7 @@ Time Complexity: O(N)
 Space Complexity: O(H)
 */
 
-class Solution  {
+class Solution {
   public:
   
     bool check(Node* root, long minVal, long maxVal)
